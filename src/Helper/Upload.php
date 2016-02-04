@@ -35,7 +35,7 @@ class Upload
 
     public static function delete($path, $file)
     {
-        if(file_exists($path.'/'.$file))
+        if($file && file_exists($path.'/'.$file))
             unlink($path.'/'.$file);
     }
 }
