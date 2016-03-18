@@ -121,7 +121,7 @@ class Controller extends SFController
 
     protected function addError($error)
     {
-        if(!empty($errors))
+        if(!empty($error))
         {
             $this->errors[] = $error;
             $this->get('session')->getFlashBag()->add('error', $error);
