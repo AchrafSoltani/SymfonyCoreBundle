@@ -51,6 +51,11 @@ class Cart extends Collection
         return $this->pullData();
     }
 
+    public function clear()
+    {
+        $this->purge();
+    }
+
     public function totalItems()
     {
         return $this->getCount();

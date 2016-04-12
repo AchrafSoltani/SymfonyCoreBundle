@@ -65,6 +65,12 @@ class Collection
         $this->_items--;
     }
 
+    public function purge()
+    {
+        $this->_data = array();
+        $this->_items = 0;
+    }
+
     public function getCount()
     {
         return $this->_items;
